@@ -1,6 +1,14 @@
 <h1> Code Book </h1>
 This document describes the data transformations performed by run_analysis.R.
 <br><br>
+
+<h2> Project Summary </h2>
+Final project for Johns Hopkins Course "Getting and Cleaning Data"
+
+Steps: Change the parameter of the setwd function call to the working directory/folder (i.e., the folder where these the R script file is saved). Ensure the unzipped "UCI HAR Dataset" dataset is in the working directory. Run the R script run_analysis.r.
+
+<h1> Code Book Summary </h1>
+
 The training set and test set were merged together into 1 dataset, and all variables not containing the words "mean" or "std" (standard deviation) were stripped from the data set. The activity type and subject ID were added as columns to the dataset, and turned into the key of the dataset. Dataset was then melted into 4 columns: subject, activity, variable and value, and then casted so that subject and activity are the keys, and the mean of each remaining variable was taken for each combination of subject and activity. 
 
 <h1>Structure and details about the dataset</h1>
